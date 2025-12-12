@@ -1,3 +1,5 @@
+package pj;
+
 import java.awt.*;
 import java.io.IOException;
 import java.nio.ByteBuffer;

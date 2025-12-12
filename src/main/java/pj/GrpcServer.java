@@ -22,7 +22,6 @@ public class GrpcServer {
     private static final String DB_URL = "jdbc:h2:D:/Documents/LinkedInProjects/UTPTask11/dbres";
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        //TODO: implement program based on tutorial instructions
         Server server = ServerBuilder.forPort(PORT)
                 .addService(new CircleServiceImpl())
                 .build();
