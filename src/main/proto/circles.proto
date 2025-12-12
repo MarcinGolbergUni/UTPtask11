@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "grpc.circles";
+option java_outer_classname = "CircleProto";
+
+service CircleService {
+  rpc GetCircles (Empty) returns (CircleResponse);
+}
+
+message Empty {}
+
+message CircleDTO {
+  int32 x = 1;
+  int32 y = 2;
+  int32 r = 3;
+  int32 g = 4;
+  int32 b = 5;
+}
+
+message CircleResponse {
+  repeated CircleDTO circles = 1;
+}
